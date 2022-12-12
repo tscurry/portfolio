@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  position: sticky;
+  top: 0;
+  padding-top: 15px;
+  height: 10vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+#logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.nav-header a {
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.nav-header a:hover {
+  padding-bottom: 7px;
+  border-bottom: 3px solid #aa5c49;
+}

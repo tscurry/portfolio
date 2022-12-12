@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: auto;
+}
+
+.personal-info {
+  line-height: 1.5;
+  width: 50%;
+}
+
+.personal-info p {
+  text-align: start;
+  padding: 50px 0 0;
+}
+
+.personal-info h2 {
+  border-bottom: 5px solid #aa5c49;
+  width: max-content;
+  font-size: 2.5rem;
+}
+
+.resume-button {
+  text-align: start;
+  width: max-content;
+}
+
+.resume-button button {
+  cursor: pointer;
+  margin: 75px 0;
+  padding: 10px 50px;
+}
+
+.resume-button button:hover {
+  border: 5px double #aa5c49;
+  scale: 1.5rem;
+  transition: linear 0.2s;
+}
