@@ -12,7 +12,7 @@ export const About = () => {
       <div className="about" id="about-sec" ref={ref}>
         <div className="personal-info">
           <motion.h2
-            animate={{ opacity: isInView ? 1 : 0, x: isInView && 0 }}
+            animate={{ opacity: isInView && 1, x: isInView && 0 }}
             transition={{ delay: 1, duration: 2 }}
             initial={{ opacity: 0, x: -100 }}
           >
@@ -32,7 +32,7 @@ export const About = () => {
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 200 }}
+            animate={{ opacity: isInView && 1, y: isInView && 0}}
             transition={{ type: "tween", delay: 1.4, duration: 2 }}
             className="resume-button"
           >
@@ -41,7 +41,7 @@ export const About = () => {
         </div>
         <div className="about-img">
           <motion.video
-            animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : 100 }}
+            animate={{ opacity: isInView && 1, x: isInView && 0 }}
             transition={{ delay: 1, duration: 2 }}
             initial={{ opacity: 0, x: 100 }}
             autoPlay

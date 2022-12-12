@@ -107,7 +107,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
-                style={iconStyles}
+                style={{width: '100', backgroundColor: '#969697'}}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               />
               <span>GitHub</span>
@@ -121,7 +121,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
-                style={{ width: "100", color: "pink" }}
+                style={{ width: "100", backgroundColor: "#969697" }}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
               />
               <span>Express.js</span>
