@@ -1,0 +1,26 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: auto;
+}
+.contact-2 {
+    line-height: 2;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+}
+
+.contact-2 button {
+    cursor: pointer;
+    margin: 50px auto;
+    padding: 10px 30px;
+}
+
+.contact-2 button:hover {
+    border: 5px double #aa5c49;
+    scale: 1.5rem;
+    transition: linear 0.2s;
+}
