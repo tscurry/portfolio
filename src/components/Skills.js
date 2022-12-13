@@ -24,13 +24,14 @@ export const Skills = () => {
   };
 
   const item = {
-    visible: { 
-      opacity: isInView && 1, y: isInView && 0,
+    visible: {
+      opacity: isInView && 1,
+      y: isInView && 0,
       transition: {
         duration: 0.35,
-        type: 'tween',
-        ease: 'linear'
-      }
+        type: "tween",
+        ease: "linear",
+      },
     },
     hidden: { opacity: 0, y: 150 },
   };
@@ -87,13 +88,6 @@ export const Skills = () => {
             <motion.div variants={item}>
               <img
                 style={iconStyles}
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-              />
-              <span>TypeScript</span>
-            </motion.div>
-            <motion.div variants={item}>
-              <img
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               />
               <span>Node.js</span>
@@ -107,7 +101,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
-                style={{width: '100', backgroundColor: '#969697'}}
+                style={{ width: "100", backgroundColor: "#969697" }}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               />
               <span>GitHub</span>
