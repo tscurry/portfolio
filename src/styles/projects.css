@@ -20,8 +20,8 @@
 
 .projects-holder {
   margin: auto;
-  border: 1px double #fff;
-  border-radius: 50px;
+  /* border: 1px double #fff;
+  border-radius: 50px; */
   padding: 50px;
 }
 
@@ -48,7 +48,7 @@
 .item-col-2 ul {
   list-style: square;
   margin: 40px 0;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .item-img {
@@ -68,4 +68,11 @@
 .item-buttons a {
   margin: 10px 50px 10px 0;
   color: #aa5c49;
+}
+
+.coming-soon {
+    opacity: 0.7;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 20px 0;
 }

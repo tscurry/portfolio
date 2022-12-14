@@ -1,6 +1,8 @@
 import * as React from "react";
 import "../styles/projects.css";
 import countryClub from "../assests/country-club.png";
+import reddit from '../assests/reddit.jpg'
+import ecommerce from '../assests/e-comerce.svg'
 
 export const Projects = () => {
   return (
@@ -18,7 +20,10 @@ export const Projects = () => {
                   <span className="tech-used">HTML, CSS, JavaScript</span>
                 </p>
                 <ul>
-                  <li>Simple responsive website with no functionality outside of design and responsiveness.</li>
+                  <li>
+                    Simple responsive website with no functionality outside of
+                    design and responsiveness.
+                  </li>
                 </ul>
                 <div className="item-buttons">
                   <a
@@ -36,9 +41,20 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="item-container"></div>
-            <div className="item-container"></div>
-            <div className="item-container"></div> */}
+            <div className="item-container">
+              <img className="item-img" src={reddit} />
+              <div className="item-col-2">
+                <h3>Reddit Client</h3>
+                <p className='coming-soon'>Coming Soon</p>
+              </div>
+            </div>
+            <div className="item-container">
+              <img className="item-img" src={ecommerce} />
+              <div className="item-col-2">
+                <h3>E-Commerce App</h3>
+                <p className='coming-soon'>Coming Soon</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
