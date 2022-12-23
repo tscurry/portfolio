@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
-import "../styles/introStyles.css";
+import "./introduction.css";
 
-export const Introduction = () => {
+const Introduction = () => {
   return (
     <>
       <div className="introduction">
@@ -21,3 +21,5 @@ export const Introduction = () => {
     </>
   );
 };
+
+export default Introduction;

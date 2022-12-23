@@ -1,18 +1,22 @@
 import * as React from "react";
-import "../styles/projects.css";
-import countryClub from "../assests/country-club.png";
-import reddit from '../assests/reddit.jpg'
-import ecommerce from '../assests/e-comerce.svg'
+import countryClub from "../../../assests/country-club.png";
+import reddit from "../../../assests/reddit.jpg";
+import ecommerce from "../../../assests/e-comerce.svg";
+import "./projects.css";
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <>
       <div className="projects">
         <div className="projects-2">
-          <h2>Projects</h2>
+          <h2 id="projects">Projects</h2>
           <div className="projects-holder">
             <div className="item-container">
-              <img className="item-img" src={countryClub} />
+              <img
+                className="item-img"
+                src={countryClub}
+                alt="Dadli Country Club"
+              />
               <div className="item-col-2">
                 <h3>Dadli Country Club</h3>
                 <p>
@@ -29,12 +33,14 @@ export const Projects = () => {
                   <a
                     href="https://dadlicountryclub.netlify.app/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Live
                   </a>
                   <a
                     href="https://github.com/tscurry/country-club"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Repository
                   </a>
@@ -42,17 +48,17 @@ export const Projects = () => {
               </div>
             </div>
             <div className="item-container">
-              <img className="item-img" src={reddit} />
+              <img className="item-img" src={reddit} alt="Reddit" />
               <div className="item-col-2">
                 <h3>Reddit Client</h3>
-                <p className='coming-soon'>Coming Soon</p>
+                <p className="coming-soon">Coming Soon</p>
               </div>
             </div>
             <div className="item-container">
-              <img className="item-img" src={ecommerce} />
+              <img className="item-img" src={ecommerce} alt="Online Shopping" />
               <div className="item-col-2">
                 <h3>E-Commerce App</h3>
-                <p className='coming-soon'>Coming Soon</p>
+                <p className="coming-soon">Coming Soon</p>
               </div>
             </div>
           </div>
@@ -62,3 +68,5 @@ export const Projects = () => {
     </>
   );
 };
+
+export default Projects;

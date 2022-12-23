@@ -1,11 +1,6 @@
-import "./styles.css";
-import { Header } from "./components/Header";
-import { Introduction } from "./components/Introduction";
-import { About } from "./components/About";
-import { Skills } from "./components/Skills";
 import React from "react";
-import { Projects } from "./components/Projects";
-import { Contact } from "./components/Contact";
+import { Header, Introduction, About, Projects, Skills, Contact } from "./components/index";
+import "./styles.css";
 
 export const App = () => {
   return (
@@ -14,7 +9,7 @@ export const App = () => {
       <Introduction />
       <About />
       <Skills />
-      <Projects/>
+      <Projects />
       <Contact />
     </div>
   );

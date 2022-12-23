@@ -1,10 +1,10 @@
 import * as React from "react";
-import "../styles/contact.css";
+import "./contact.css";
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <>
-      <div className="contact">
+      <div id='contact' className="contact">
         <div className="contact-2">
           <h1>Get In Touch</h1>
           <p>Whether you have an idea for a project or just want to chat</p>
@@ -19,3 +19,5 @@ export const Contact = () => {
     </>
   );
 };
+
+export default Contact;

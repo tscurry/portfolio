@@ -1,14 +1,11 @@
 import * as React from "react";
-import { motion, useInView, Variants } from "framer-motion/dist/framer-motion";
-import "../styles/skills.css";
+import { motion } from "framer-motion/dist/framer-motion";
+import "./skills.css";
 
-export const Skills = () => {
-  const ref = React.useRef(null);
-  const isInView = useInView(ref);
-
+const Skills = () => {
   const variants = {
     visible: {
-      opacity: isInView && 1,
+      opacity: 1,
       transition: {
         delayChildren: 1,
         when: "beforeChildren",
@@ -25,8 +22,8 @@ export const Skills = () => {
 
   const item = {
     visible: {
-      opacity: isInView && 1,
-      y: isInView && 0,
+      opacity: 1,
+      y: 0,
       transition: {
         duration: 0.35,
         type: "tween",
@@ -42,10 +39,10 @@ export const Skills = () => {
 
   return (
     <>
-      <div ref={ref} className="skills-section" id="skills">
+      <div className="skills-section" id="skills">
         <motion.div className="skillset">
           <motion.h2
-            animate={{ opacity: isInView && 1, y: isInView && 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ type: "tween", delay: 0.2, duration: 1 }}
             initial={{ opacity: 0, y: -100 }}
           >
@@ -59,6 +56,7 @@ export const Skills = () => {
           >
             <motion.div variants={item}>
               <img
+                alt="React"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               />
@@ -66,6 +64,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="JavaScript"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
               />
@@ -73,6 +72,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="HTML"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               />
@@ -80,6 +80,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="CSS"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               />
@@ -87,6 +88,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="Node.js"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               />
@@ -94,6 +96,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="MongoDB"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
               />
@@ -101,6 +104,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="GitHub"
                 style={{ width: "100", backgroundColor: "#969697" }}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               />
@@ -108,6 +112,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="Redux"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
               />
@@ -115,6 +120,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="Express.js"
                 style={{ width: "100", backgroundColor: "#969697" }}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
               />
@@ -122,6 +128,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="PostgreSQL"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               />
@@ -129,6 +136,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="C"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
               />
@@ -136,6 +144,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="C++"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
               />
@@ -143,6 +152,7 @@ export const Skills = () => {
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="C#"
                 style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
               />
@@ -155,3 +165,5 @@ export const Skills = () => {
     </>
   );
 };
+
+export default Skills;

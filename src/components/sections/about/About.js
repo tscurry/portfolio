@@ -1,18 +1,15 @@
 import * as React from "react";
-import { motion, useInView } from "framer-motion/dist/framer-motion";
-import aboutVideo from "../assests/coding3.mp4";
-import "../styles/about.css";
+import { motion } from "framer-motion/dist/framer-motion";
+import aboutVideo from "../../../assests/coding3.mp4";
+import "./about.css";
 
-export const About = () => {
-  const ref = React.useRef(null);
-  const isInView = useInView(ref); //to animate only when in view
-
+const About = () => {
   return (
     <>
-      <div className="about" id="about-sec" ref={ref}>
+      <div className="about" id="about">
         <div className="personal-info">
           <motion.h2
-            animate={{ opacity: isInView && 1, x: isInView && 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 2 }}
             initial={{ opacity: 0, x: -100 }}
           >
@@ -20,7 +17,7 @@ export const About = () => {
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: isInView && 1, y: isInView && 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ type: "tween", delay: 1.2, duration: 2 }}
           >
             Hello, I'm Tim and I'm a Full Stack Developer. Born and raised in St
@@ -32,7 +29,7 @@ export const About = () => {
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: isInView && 1, y: isInView && 0}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ type: "tween", delay: 1.4, duration: 2 }}
             className="resume-button"
           >
@@ -41,7 +38,7 @@ export const About = () => {
         </div>
         <div className="about-img">
           <motion.video
-            animate={{ opacity: isInView && 1, x: isInView && 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 2 }}
             initial={{ opacity: 0, x: 100 }}
             autoPlay
@@ -59,3 +56,5 @@ export const About = () => {
     </>
   );
 };
+
+export default About;

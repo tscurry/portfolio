@@ -1,17 +1,19 @@
 * {
-    font-family: monospace, sans-serif;
-    text-align: center;
-    background-color: #000;
-    font-size: 18px;
-    color: #fff;
-    padding: 0;
-    margin: 0;
+  font-family: monospace, sans-serif;
+  text-align: center;
+  background-color: #000;
+  font-size: 18px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 hr {
-    width: 90%;
-    margin: auto;
-    border-style: solid;
-    border-color: #fff;
-    border-width: 1px 0 0 0;
-  }
+  width: 90%;
+  margin: auto;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+}
