@@ -35,3 +35,11 @@ header {
   padding-bottom: 7px;
   border-bottom: 3px solid #aa5c49;
 }
+
+/******** Media Queries **********/
+
+@media screen and (max-width: 1024px) {
+  .nav-header a {
+    font-size: 0.8rem;
+  }
+}

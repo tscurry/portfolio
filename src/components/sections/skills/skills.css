@@ -24,3 +24,12 @@
 .skill-icons span {
     display: block;
 }
+
+
+/********** Media Queries ***********/
+
+@media screen and (max-width: 1024px) {
+    .skillset h2 {
+        font-size: 2rem;
+    }
+}

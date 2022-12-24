@@ -48,14 +48,14 @@ const Projects = () => {
               </div>
             </div>
             <div className="item-container">
-              <img className="item-img" src={reddit} alt="Reddit" />
+                <img className="item-img" src={reddit} alt="Reddit" />
               <div className="item-col-2">
                 <h3>Reddit Client</h3>
                 <p className="coming-soon">Coming Soon</p>
               </div>
             </div>
             <div className="item-container">
-              <img className="item-img" src={ecommerce} alt="Online Shopping" />
+                <img className="item-img" src={ecommerce} alt="Online Shopping" />
               <div className="item-col-2">
                 <h3>E-Commerce App</h3>
                 <p className="coming-soon">Coming Soon</p>

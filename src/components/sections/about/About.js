@@ -36,15 +36,15 @@ const About = () => {
             <button>Resume</button>
           </motion.div>
         </div>
-        <div className="about-img">
+        <div className="about-video">
           <motion.video
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 2 }}
             initial={{ opacity: 0, x: 100 }}
             autoPlay
             loop
-            width="600"
-            height="500"
+            width='600'
+            height='500'
             muted
           >
             <source type="video/mp4" src={aboutVideo} />
