@@ -90,3 +90,28 @@
     font-size: 1.5rem;
   }
 }
+
+@media screen and (max-width: 820px) {
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+  .item-col-2 h3 {
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+  .item-col-2 p {
+    font-size: 0.8rem;
+  }
+  .item-col-2 span {
+    font-size: 0.8rem;
+  }
+  .item-col-2 ul li {
+    font-size: 0.8rem;
+  }
+  .item-container {
+    display: block;
+  } 
+  .item-img {
+    max-width: 75%;
+  }
+}

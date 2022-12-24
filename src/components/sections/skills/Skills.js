@@ -33,10 +33,6 @@ const Skills = () => {
     hidden: { opacity: 0, y: 150 },
   };
 
-  const iconStyles = {
-    width: "100px",
-  };
-
   return (
     <>
       <div className="skills-section" id="skills">
@@ -57,7 +53,6 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="React"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               />
               <span>React</span>
@@ -65,15 +60,20 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="JavaScript"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
               />
               <span>JavaScript</span>
             </motion.div>
             <motion.div variants={item}>
               <img
+                alt="MongoDB"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              />
+              <span>MongoDB</span>
+            </motion.div>
+            <motion.div variants={item}>
+              <img
                 alt="HTML"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               />
               <span>HTML</span>
@@ -81,7 +81,6 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="CSS"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               />
               <span>CSS</span>
@@ -89,23 +88,14 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="Node.js"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               />
               <span>Node.js</span>
             </motion.div>
             <motion.div variants={item}>
               <img
-                alt="MongoDB"
-                style={iconStyles}
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-              />
-              <span>MongoDB</span>
-            </motion.div>
-            <motion.div variants={item}>
-              <img
                 alt="GitHub"
-                style={{ width: "100", backgroundColor: "#969697" }}
+                style={{ backgroundColor: "#969697" }}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               />
               <span>GitHub</span>
@@ -113,7 +103,6 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="Redux"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
               />
               <span>Redux</span>
@@ -121,7 +110,7 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="Express.js"
-                style={{ width: "100", backgroundColor: "#969697" }}
+                style={{ backgroundColor: "#969697" }}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
               />
               <span>Express.js</span>
@@ -129,7 +118,6 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="PostgreSQL"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               />
               <span>PostgreSQL</span>
@@ -137,7 +125,6 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="C"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
               />
               <span>C</span>
@@ -145,7 +132,6 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="C++"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
               />
               <span>C++</span>
@@ -153,7 +139,6 @@ const Skills = () => {
             <motion.div variants={item}>
               <img
                 alt="C#"
-                style={iconStyles}
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
               />
               <span>C#</span>

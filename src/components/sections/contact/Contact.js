@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <motion.div
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1, duration: 2 }}
+      transition={{ delay: 0.5, duration: 1.5 }}
       initial={{ opacity: 0, y: 0 }}
     >
       <div id="contact" className="contact">

@@ -50,15 +50,25 @@
   transition: linear 0.2s;
 }
 
-
 /************ Media Queries **********/
 
 @media screen and (max-width: 1024px) {
   .personal-info h2 {
     font-size: 2rem;
   }
-
   .personal-info p {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .personal-info h2 {
+    font-size: 1.5rem;
+  }
+  .personal-info p {
+    font-size: 0.7rem;
+  }
+  .resume-button button {
+    font-size: 0.8rem;
   }
 }

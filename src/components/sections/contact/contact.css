@@ -36,3 +36,20 @@
   margin-bottom: 5px;
   font-size: 0.85rem;
 }
+
+/************* Media Queries ***********/
+
+@media screen and (max-width: 820px) {
+  .contact-2 p {
+    font-size: 0.8rem;
+  }
+  .contact h1 {
+    font-size: 2rem;
+  }
+  .contact-2 button {
+    font-size: 0.8rem;
+  }
+  .footer p { 
+    font-size: 0.6rem;
+  }
+}
