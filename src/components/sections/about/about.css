@@ -7,11 +7,15 @@
   margin: auto;
 }
 
+.reverse-about-video {
+  display: none;
+}
 .about-video {
   width: auto;
 }
 
-.about-video video {
+.about-video video,
+.reverse-about-video video {
   max-width: 80%;
   height: auto;
 }
@@ -70,5 +74,38 @@
   }
   .resume-button button {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about {
+    flex-direction: column;
+    height: auto;
+    margin: 20px auto;
+  }
+  .personal-info {
+    height: auto;
+    max-width: 100%;
+  }
+  .personal-info h2 {
+    font-size: 1.2rem;
+  }
+  .personal-info p {
+    width: 100%;
+  }
+  .about-video {
+    display: none;
+  }
+  .reverse-about-video {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 0;
+  }
+  .reverse-about-video video {
+    height: auto;
+    max-width: 100%;
+  }
+  .resume-button {
+    text-align: center;
   }
 }

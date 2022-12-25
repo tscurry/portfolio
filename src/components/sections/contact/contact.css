@@ -53,3 +53,18 @@
     font-size: 0.6rem;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+  .contact-2 p {
+    font-size: 0.7rem;
+  }
+  .footer p {
+    font-size: 0.5rem;
+  }
+  .contact-2 button {
+    font-size: 0.7rem;
+  }
+}

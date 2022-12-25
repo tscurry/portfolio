@@ -43,3 +43,12 @@ header {
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .nav-header {
+    display: none;
+  }
+  #logo {
+    font-size: 1.4rem;
+  }
+}

@@ -15,6 +15,21 @@ const About = () => {
           >
             About Me
           </motion.h2>
+          <div className="reverse-about-video">
+          <motion.video
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1, duration: 2 }}
+            initial={{ opacity: 0, x: 100 }}
+            autoPlay
+            loop
+            width='600'
+            height='500'
+            muted
+          >
+            <source type="video/mp4" src={aboutVideo} />
+            Your browser does not support video tag.
+          </motion.video>
+        </div>
           <motion.p
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}

@@ -49,3 +49,29 @@
         font-size: 1.5rem;
     }
 }
+
+@media screen and (max-width: 560px) {
+    .skills-section {
+        height: auto;
+        margin: 20px auto;
+    }
+    .skill-icons {
+        grid-template-columns: repeat(3, 100px);
+    }
+    .skill-icons span {
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill-icons {
+        grid-template-columns: repeat(3, 75px);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .skill-icons {
+        grid-template-columns: repeat(3, 75px);
+        gap: 25px;
+    }
+}

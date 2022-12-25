@@ -1,0 +1,52 @@
+.menu {
+  display: none;
+}
+
+.js-open {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  right: 25px;
+}
+
+.menu-tabs {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: inherit;
+}
+
+.menu-tabs a {
+  text-decoration: none;
+  margin: 0 auto 35px;
+}
+
+.menu-tabs a:hover {
+  padding-bottom: 7px;
+  border-bottom: 3px solid #aa5c49;
+}
+
+/*************** Media Queries ****************/
+
+@media screen and (max-width: 560px) {
+  .menu {
+    display: block;
+  }
+  .menu-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 50px 20px;
+    height: 100%;
+    width: min(75vw, 400px);
+    background-color: #080808;
+    z-index: 1;
+    margin: auto;
+  }
+}

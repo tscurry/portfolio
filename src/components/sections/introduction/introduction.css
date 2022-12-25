@@ -43,3 +43,21 @@
     font-size: 0.8rem;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .occupation h1 {
+    font-size: 2rem;
+  }
+  .occupation p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .occupation h1 {
+    font-size: 1.5rem;
+  }
+  .occupation p {
+    font-size: 0.5rem;
+  }
+}
