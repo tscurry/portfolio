@@ -11,7 +11,7 @@ const Header = () => {
           TS
         </a>
         <HamburgerMenu />
-        <nav class="nav-header">
+        <nav className="nav-header">
           <a onClick={home} href="#home">
             Home
           </a>

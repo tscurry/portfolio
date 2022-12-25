@@ -2,31 +2,35 @@ import * as React from "react";
 import "./hamburger.css";
 
 const HamburgerMenu = () => {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-  const [checked, setChecked] = React.useState(false)
+  const [checked, setChecked] = React.useState(false);
 
   const home = () => {
-    setMenuOpen(!menuOpen);
     window.scrollTo(0, 0);
-    document.getElementById("menu_checkbox").checked = setChecked(!checked);
+    setChecked(!checked);
   };
 
   const toggleOpen = () => {
-    setMenuOpen(!menuOpen);
-
-    document.getElementById("menu_checkbox").checked = setChecked(!checked);
+    setChecked(!checked);
   };
+
   return (
     <div className="menu">
       <div id="webapp_cover">
         <div id="menu_button">
-          <input type="checkbox" id="menu_checkbox" />
-          <label for="menu_checkbox" id="menu_label" onClick={toggleOpen}>
+          <input
+            type="checkbox"
+            checked={checked}
+            onChange={e => {
+              setChecked(e.target.checked);
+            }}
+            id="menu_checkbox"
+          />
+          <label htmlFor="menu_checkbox" id="menu_label">
             <div id="menu_text_bar"></div>
           </label>
         </div>
       </div>
-      {menuOpen && (
+      {checked && (
         <div className="menu-open">
           <nav className="menu-tabs">
             <a onClick={home} href="#home">
