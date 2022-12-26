@@ -9,7 +9,7 @@
   width: 39px;
   margin: 0 auto;
   transform: translateY(-50%) scale(2);
-  z-index: 3;
+  z-index: 5;
 }
 
 #menu_button {
@@ -141,12 +141,14 @@
 
 .menu-tabs a {
   text-decoration: none;
-  margin: 0 auto 35px;
+  margin: auto;
+  padding: 20px 0;
+  background-color: inherit;
 }
 
 .menu-tabs a:hover {
   padding-bottom: 7px;
-  border-bottom: 3px solid #aa5c49;
+  border-bottom: 5px solid #aa5c49;
 }
 
 /*************** Media Queries ****************/
@@ -167,7 +169,6 @@
     height: 100%;
     width: min(75vw, 400px);
     background-color: #080808;
-    z-index: 2;
     margin: auto;
   }
 }

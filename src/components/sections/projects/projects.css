@@ -4,7 +4,6 @@
   align-items: center;
   margin: 100px auto;
   max-width: 85%;
-  /* height: auto; */
 }
 
 .projects-2 {
@@ -76,7 +75,7 @@
 }
 
 .coming-soon {
-  opacity: 0.7;
+  color: #787878;
   font-style: italic;
   font-size: 1.2rem;
   margin: 20px 0;

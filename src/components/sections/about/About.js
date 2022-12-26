@@ -1,6 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 import aboutVideo from "../../../assests/coding3.mp4";
+import resume from '../../../assests/resume.pdf';
 import "./about.css";
 
 const About = () => {
@@ -9,30 +10,33 @@ const About = () => {
       <div className="about" id="about">
         <div className="personal-info">
           <motion.h2
-            animate={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 2 }}
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0 }}
+            exit={{ opacity: 0 }}
           >
             About Me
           </motion.h2>
           <div className="reverse-about-video">
-          <motion.video
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 2 }}
-            initial={{ opacity: 0, x: 100 }}
-            autoPlay
-            loop
-            width='600'
-            height='500'
-            muted
-          >
-            <source type="video/mp4" src={aboutVideo} />
-            Your browser does not support video tag.
-          </motion.video>
-        </div>
+            <motion.video
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 2 }}
+              initial={{ opacity: 0 }}
+              exit={{ opacity: 0 }}
+              autoPlay
+              loop
+              width="600"
+              height="500"
+              muted
+            >
+              <source type="video/mp4" src={aboutVideo} />
+              Your browser does not support video tag.
+            </motion.video>
+          </div>
           <motion.p
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ type: "tween", delay: 1.2, duration: 2 }}
           >
             Hello, I'm Tim and I'm a Full Stack Developer. Born and raised in St
@@ -43,23 +47,25 @@ const About = () => {
             which I'm expecting to complete in the next 5 months.
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            exit={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ type: "tween", delay: 1.4, duration: 2 }}
             className="resume-button"
           >
-            <button>Resume</button>
+            <button><a rel='noopener noreferrer' href={resume} target='_blank'>Resume</a></button>
           </motion.div>
         </div>
         <div className="about-video">
           <motion.video
-            animate={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 2 }}
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0 }}
+            exit={{ opacity: 0 }}
             autoPlay
             loop
-            width='600'
-            height='500'
+            width="600"
+            height="500"
             muted
           >
             <source type="video/mp4" src={aboutVideo} />

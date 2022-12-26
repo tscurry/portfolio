@@ -9,9 +9,10 @@ const Introduction = () => {
         <div className="occupation">
           <h1>Hi, I'm Timmy</h1>
           <motion.p
-            animate={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1}}
+            exit={{ opacity: 0 }}
             transition={{ delay: 4, duration: 2 }}
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0 }}
           >
             Full Stack Developer | Web Developer
           </motion.p>

@@ -9,7 +9,7 @@ const Skills = () => {
       transition: {
         delayChildren: 1,
         when: "beforeChildren",
-        staggerChildren: 0.3,
+        staggerChildren: 0.1,
       },
     },
     hidden: {
@@ -38,9 +38,9 @@ const Skills = () => {
       <div className="skills-section" id="skills">
         <motion.div className="skillset">
           <motion.h2
-            animate={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ type: "tween", delay: 0.2, duration: 1 }}
-            initial={{ opacity: 0, y: -100 }}
+            initial={{ opacity: 0}}
           >
             Skills
           </motion.h2>

@@ -18,6 +18,7 @@
 .reverse-about-video video {
   max-width: 80%;
   height: auto;
+  pointer-events: none;
 }
 
 .personal-info {
@@ -46,6 +47,10 @@
   padding: 15px 25px;
   border-radius: 5px;
   border: double #fff;
+}
+
+.resume-button a {
+  text-decoration: none;
 }
 
 .resume-button button:hover {
