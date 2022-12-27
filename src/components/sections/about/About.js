@@ -20,12 +20,10 @@ const About = () => {
             </video>
           </div>
           <p>
-            Hello, I'm Tim and I'm a Full Stack Developer. Born and raised in St
-            John's, Antigua I migrated to Canada to study, and graduated with a
+            Hello I'm Timmy, an aspiring Full Stack Developer with a
             diploma in Electronics Engineering. As an avid learner I was
             intrigued with coding, learning and building apps and websites. I'm
-            currently enrolled in the Full Stack Engineer course at Codecademy
-            which I'm expecting to complete in the next 5 months.
+            currently enrolled in the Full Stack Engineer course at Codecademy.
           </p>
           <div className="resume-button">
             <button>
