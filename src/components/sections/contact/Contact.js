@@ -1,14 +1,10 @@
 import * as React from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import 'animate.css';
 import "./contact.css";
 
 const Contact = () => {
   return (
-    <motion.div
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.5, duration: 1.5 }}
-      initial={{ opacity: 0, y: 0 }}
-    >
+    <div className='animate__animated animate__fadeIn animate__delay-1s animate__slower'>
       <div id="contact" className="contact">
         <div className="contact-2">
           <h1>Get In Touch</h1>
@@ -23,7 +19,7 @@ const Contact = () => {
         <p>Built & Designed By Timmy Scurry</p>
         <p>&#169; 2022</p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -10,6 +10,9 @@
 .occupation {
   line-height: 1.5;
 }
+.occupation p {
+  z-index: 0;
+}
 .occupation h1 {
   font-weight: bold;
   font-size: 4rem;

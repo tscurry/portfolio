@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import "animate.css";
 import "./introduction.css";
 
 const Introduction = () => {
@@ -8,14 +8,9 @@ const Introduction = () => {
       <div className="introduction">
         <div className="occupation">
           <h1>Hi, I'm Timmy</h1>
-          <motion.p
-            animate={{ opacity: 1}}
-            exit={{ opacity: 0 }}
-            transition={{ delay: 4, duration: 2 }}
-            initial={{ opacity: 0 }}
-          >
-            Full Stack Developer | Web Developer
-          </motion.p>
+          <p className="animate__animated animate__fadeInUp animate__delay-4s animate__slower">
+            Aspiring Full Stack Developer
+          </p>
         </div>
       </div>
       <hr />

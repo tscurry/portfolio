@@ -1,76 +1,45 @@
 import * as React from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import 'animate.css';
 import aboutVideo from "../../../assests/coding3.mp4";
-import resume from '../../../assests/resume.pdf';
+import resume from "../../../assests/resume.pdf";
 import "./about.css";
 
 const About = () => {
   return (
     <>
-      <div className="about" id="about">
+      <div
+        className="about animate__animated animate__fadeIn animate__delay-1s animate__slower"
+        id="about"
+      >
         <div className="personal-info">
-          <motion.h2
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 2 }}
-            initial={{ opacity: 0 }}
-            exit={{ opacity: 0 }}
-          >
-            About Me
-          </motion.h2>
+          <h2>About Me</h2>
           <div className="reverse-about-video">
-            <motion.video
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 2 }}
-              initial={{ opacity: 0 }}
-              exit={{ opacity: 0 }}
-              autoPlay
-              loop
-              width="600"
-              height="500"
-              muted
-            >
+            <video autoPlay loop width="600" height="500" muted>
               <source type="video/mp4" src={aboutVideo} />
               Your browser does not support video tag.
-            </motion.video>
+            </video>
           </div>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ type: "tween", delay: 1.2, duration: 2 }}
-          >
+          <p>
             Hello, I'm Tim and I'm a Full Stack Developer. Born and raised in St
             John's, Antigua I migrated to Canada to study, and graduated with a
             diploma in Electronics Engineering. As an avid learner I was
             intrigued with coding, learning and building apps and websites. I'm
             currently enrolled in the Full Stack Engineer course at Codecademy
             which I'm expecting to complete in the next 5 months.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0 }}
-            exit={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ type: "tween", delay: 1.4, duration: 2 }}
-            className="resume-button"
-          >
-            <button><a rel='noopener noreferrer' href={resume} target='_blank'>Resume</a></button>
-          </motion.div>
+          </p>
+          <div className="resume-button">
+            <button>
+              <a rel="noopener noreferrer" href={resume} target="_blank">
+                Resume
+              </a>
+            </button>
+          </div>
         </div>
         <div className="about-video">
-          <motion.video
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 2 }}
-            initial={{ opacity: 0 }}
-            exit={{ opacity: 0 }}
-            autoPlay
-            loop
-            width="600"
-            height="500"
-            muted
-          >
+          <video autoPlay loop width="600" height="500" muted>
             <source type="video/mp4" src={aboutVideo} />
             Your browser does not support video tag.
-          </motion.video>
+          </video>
         </div>
       </div>
       <hr />

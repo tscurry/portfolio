@@ -31,7 +31,7 @@ const HamburgerMenu = () => {
         </div>
       </div>
       {checked && (
-        <div className="menu-open">
+        <div className="menu-open animate__animated animate__zoomInLeft animate__faster">
           <nav className="menu-tabs">
             <a onClick={home} href="#home">
               Home

@@ -169,5 +169,6 @@
     width: min(75vw, 400px);
     background-color: #080808;
     margin: auto;
+    z-index: 4;
   }
 }
