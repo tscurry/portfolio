@@ -147,8 +147,7 @@
 }
 
 .menu-tabs a:hover {
-  padding-bottom: 7px;
-  border-bottom: 5px solid #aa5c49;
+  color: #787878;
 }
 
 /*************** Media Queries ****************/

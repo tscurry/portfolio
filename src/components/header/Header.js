@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header id="home">
       <div className="header">
-        <a id="logo" href="#home">
+        <a id="logo" href="https://tscurry.dev">
           TS
         </a>
         <HamburgerMenu />
