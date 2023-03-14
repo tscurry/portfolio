@@ -1,29 +1,25 @@
 import * as React from "react";
-import 'animate.css';
-import aboutVideo from "../../../assests/coding3.mp4";
-import resume from "../../../assests/resume.pdf";
+import "animate.css";
+import about from "../../../assets/coding.jpg";
+import resume from "../../../assets/resume.pdf";
 import "./about.css";
 
 const About = () => {
   return (
     <>
-      <div
-        className="about animate__animated animate__fadeIn animate__delay-1s animate__slower"
-        id="about"
-      >
+      <div className="about animate__animated animate__fadeIn animate__delay-1s animate__slower" id="about">
         <div className="personal-info">
           <h2>About Me</h2>
-          <div className="reverse-about-video">
-            <video autoPlay loop width="600" height="500" muted>
+          <div className="reverse-about-image">
+            <img src={about} width="600" height="500" alt='coding'/>
+            {/* <video autoPlay loop width="600" height="500">
               <source type="video/mp4" src={aboutVideo} />
               Your browser does not support video tag.
-            </video>
+            </video> */}
           </div>
           <p>
-            Hello I'm Timmy, an aspiring Full Stack Developer with a
-            diploma in Electronics Engineering. As an avid learner I was
-            intrigued with coding, learning and building apps and websites. I'm
-            currently enrolled in the Full Stack Engineer course at Codecademy.
+            Hello I'm Timmy, an aspiring Full Stack Developer with a diploma in Electronics Engineering. As an avid learner I was intrigued with
+            coding, learning and building apps and websites. I'm currently enrolled in the Full Stack Engineer course at Codecademy.
           </p>
           <div className="resume-button">
             <button>
@@ -33,11 +29,8 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div className="about-video">
-          <video autoPlay loop width="600" height="500" muted>
-            <source type="video/mp4" src={aboutVideo} />
-            Your browser does not support video tag.
-          </video>
+        <div className="about-image">
+          <img src={about} width="600" height="500" alt='coding'/>
         </div>
       </div>
       <hr />

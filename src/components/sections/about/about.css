@@ -7,15 +7,15 @@
   margin: auto;
 }
 
-.reverse-about-video {
+.reverse-about-image {
   display: none;
 }
-.about-video {
+.about-image {
   width: auto;
 }
 
-.about-video video,
-.reverse-about-video video {
+.about-image img,
+.reverse-about-image img {
   max-width: 80%;
   height: auto;
   pointer-events: none;
@@ -98,15 +98,15 @@
   .personal-info p {
     width: 100%;
   }
-  .about-video {
+  .about-image {
     display: none;
   }
-  .reverse-about-video {
+  .reverse-about-image {
     display: flex;
     justify-content: center;
     margin: 25px auto 0;
   }
-  .reverse-about-video video {
+  .reverse-about-image img {
     height: auto;
     max-width: 100%;
   }

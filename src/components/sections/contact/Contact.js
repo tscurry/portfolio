@@ -1,10 +1,10 @@
 import * as React from "react";
-import 'animate.css';
+import "animate.css";
 import "./contact.css";
 
 const Contact = () => {
   return (
-    <div className='animate__animated animate__fadeIn animate__delay-1s animate__slower'>
+    <div className="animate__animated animate__fadeIn animate__delay-1s animate__slower">
       <div id="contact" className="contact">
         <div className="contact-2">
           <h1>Get In Touch</h1>
