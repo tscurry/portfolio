@@ -12,14 +12,10 @@ const About = () => {
           <h2>About Me</h2>
           <div className="reverse-about-image">
             <img src={about} width="600" height="500" alt='coding'/>
-            {/* <video autoPlay loop width="600" height="500">
-              <source type="video/mp4" src={aboutVideo} />
-              Your browser does not support video tag.
-            </video> */}
           </div>
           <p>
             Hello I'm Timmy, an aspiring Full Stack Developer with a diploma in Electronics Engineering. As an avid learner I was intrigued with
-            coding, learning and building apps and websites. I'm currently enrolled in the Full Stack Engineer course at Codecademy.
+            coding, learning and building apps and websites. I'm currently enrolled in the Front-End Engineer course at Codecademy.
           </p>
           <div className="resume-button">
             <button>
