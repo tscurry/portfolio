@@ -14,8 +14,8 @@ const About = () => {
             <img src={about} width="600" height="500" alt='coding'/>
           </div>
           <p>
-            Hello I'm Timmy, an aspiring Full Stack Developer with a diploma in Electronics Engineering. As an avid learner I was intrigued with
-            coding, learning and building apps and websites. I'm currently enrolled in the Front-End Engineer course at Codecademy.
+            Hello I'm Timmy, an aspiring Web Developer with a diploma in Electronics Engineering. As an avid learner I was intrigued with
+            coding, learning and building apps and websites. I'm learning web development as a self taught Developer.
           </p>
           <div className="resume-button">
             <button>

@@ -8,7 +8,7 @@ const Introduction = () => {
       <div className="introduction">
         <div className="occupation">
           <h1>Hi, I'm Timmy</h1>
-          <p className="animate__animated animate__fadeInUp animate__delay-4s animate__slower">Aspiring Front-End Engineer</p>
+          <p className="animate__animated animate__fadeInUp animate__delay-4s animate__slower">Web Developer</p>
         </div>
       </div>
       <hr />
